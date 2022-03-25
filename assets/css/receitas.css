@@ -1,0 +1,173 @@
+.receitas-todas {
+    max-width: 1440px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 0 10px;
+}
+
+.receitas-titulo {
+    grid-area: titulo;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFA000;
+    margin-top: 105px;
+    margin-bottom: 70px;
+}
+
+.wrapper-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 115px 40px;
+    min-width: 1080px;
+}
+
+.receitas-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.receitas-card:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.receitas-card-texto {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.receitas-card-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #FFA000;
+    padding: 10px 40px;
+    border-style: none;
+    background-color: #176902;
+    color: #FFFFFF;
+    width: 185px;
+    height: 48px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.receitas-card-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.container-footer {
+    background-color: #FFC107;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 119px;
+    margin-top: 140px;
+}
+
+.footer-logo {
+    width: 324px;
+    height: 84px;
+}
+
+.footer-texto {
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+
+}
+
+/* Responsividade para mobile */
+
+@media (max-width: 390px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 119px;
+        gap: 0;
+        margin-top: 70px;
+    }
+    
+    .footer-logo {
+        width: 324px;
+        height: 200px;
+    }
+    
+    .footer-texto {
+    font-size: 15px;
+    line-height: 0;
+    color: #FFFFFF;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .wrapper-card {
+        display: grid;
+        grid-template-columns: 750px;
+        min-width: 750px;
+        margin: auto;
+        text-align: center;
+        }
+    
+    .receitas-todas {
+        max-width: 750px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    
+
+    .receitas-titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+
+
+}
+
+
+@media (max-width: 390px){
+
+    .wrapper-card {
+        display: grid;
+        grid-template-columns: 370px;
+        min-width: 370px;
+        margin: auto;
+        text-align: center;
+        }
+    
+    .receitas-todas {
+        max-width: 390px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    
+
+
+    .receitas-titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+}

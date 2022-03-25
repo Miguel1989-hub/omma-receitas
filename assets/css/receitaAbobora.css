@@ -1,0 +1,341 @@
+.container-grid{
+    display: grid;
+    grid-template-columns: 100px auto 160px auto 190px;
+    grid-template-areas: 
+    ". titulo . . ."
+    ". receitaPrincipal . receitaRelacionada .";
+}
+
+.wrapper {
+    grid-area: receitaPrincipal;
+}
+
+.receita-principal--titulo {
+    grid-area: titulo;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFA000;
+    margin-top: 105px;
+}
+
+.receita-principal--img {
+    width: 592px;
+    height: 311px;
+}
+
+
+.receita-principal--info {
+    display: flex;
+    align-content: flex-end;
+    justify-content: start;
+    width: 300px;
+    gap: 20px;
+}
+
+.receita-principal--info h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+    text-align: center;
+    text-transform: lowercase;
+    border: 1px solid #176902;
+    border-radius: 47px;
+    color:  #176902;
+    padding: 5px;
+}
+
+.info-facil {
+    width: 95px;
+    height: 31px;
+}
+
+.info-serve {
+    width: 196px;
+    height: 31px;;
+}
+
+
+.ingredientes {
+    width: 592px;
+    height: 480px;
+}
+
+.ingredientes-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.38px;
+}
+
+.ingredientes-lista {
+    list-style: none;
+}
+
+
+.margin-correcao{
+    margin-top: -25px;
+}
+
+.ingredientes-lista li {    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24.38px;
+    margin-left: -40px;
+
+}
+
+
+.receita-video--titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 15.38px;
+    margin-top: 0;
+}
+
+
+.receita-preparo {
+    width: 592px;
+    height: 576px;
+}
+
+.receita-preparo--titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.38px;
+}
+
+.receita-preparo--texto {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24.38px;
+}
+
+
+.receitas-relacionadas{
+    grid-area: receitaRelacionada;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    gap:40px;
+}
+
+
+.receitas-relacionadas--titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 23px;
+    margin: 0;
+    color: #FFA000;
+}
+
+
+.receitas-relacionadas--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 345px;
+    height: 411px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.receitas-relacionadas--card img {
+    width: 345px;
+    height: 342px;
+}
+
+.receitas-relacionadas--card p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 19.69px;
+}
+
+
+
+/* Responsivo tablet */
+
+@media (max-width: 960px){
+    .container-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "titulo"
+        "receitaPrincipal"
+        "receitaRelacionada"
+        ;
+    }
+    
+    .wrapper {
+        grid-area: receitaPrincipal;
+        margin: auto;
+    }
+    
+    .receita-principal--titulo {
+        grid-area: titulo;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        color: #FFA000;
+        margin-top: 105px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    
+    
+    .receitas-relacionadas{
+        grid-area: receitaRelacionada;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap:50px;
+    }
+    
+    
+    .receitas-relacionadas--titulo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 23px;
+        margin: 0;
+        color: #FFA000;
+        padding-top: 30px;
+    }
+    
+}
+
+/* Responsividade mobile */
+
+@media (max-width: 390px) {
+    .container-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "titulo"
+        "receitaPrincipal"
+        "receitaRelacionada"
+        ;
+    }
+    
+    .receita-principal--titulo {
+        font-size: 36px;
+        line-height: 61px;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    .receita-principal {
+        text-align: center;
+    }
+
+    .receita-principal--img {
+        width: 360px;
+        height: 189px;
+        padding: 5px;
+    }
+    
+    
+    .receita-principal--info {
+        display: flex;
+        align-content: flex-end;
+        justify-content: start;
+        width: 300px;
+        gap: 20px;
+        margin-left: 20px;
+    }
+    
+    .receita-principal--info h5{
+        font-size: 18px;
+        line-height: 21.94px;
+        text-align: center;
+        margin-top: 13px;
+    }
+    
+    
+    .ingredientes {
+        width: 360px;
+        margin: auto;
+    }
+    
+    .ingredientes-titulo {
+        font-size: 20px;
+        line-height: 24.38px;
+    }
+
+    .receita-video {
+        text-align: center;
+    }
+
+    .receita-video--titulo {
+        font-size: 20px;
+        line-height: 15.38px;
+        margin-top: 0;
+    }
+
+    iframe {
+        width: 360px;
+        height: 196px;
+    }
+    
+    .receita-preparo {
+        width: 360px;
+        margin: auto;
+    }
+    
+    .receita-preparo--titulo {
+        font-size: 20px;
+        line-height: 24.38px;
+    }
+    
+    .receita-preparo--texto {
+        font-size: 20px;
+        line-height: 24.38px;
+    }
+    
+    
+    .receitas-relacionadas{
+        grid-area: receitaRelacionada;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap:40px;
+    }
+    
+    
+    .receitas-relacionadas--titulo {
+        font-size: 30px;
+        line-height: 23px;
+        padding-top: 360px;
+         color: #FFA000;
+    }
+    
+    .receitas-relacionadas--card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 345px;
+        height: 411px;
+    }
+    
+    .receitas-relacionadas--card img {
+        width: 345px;
+        height: 342px;
+    }
+    
+    .receitas-relacionadas--card p {
+        font-size: 26px;
+        line-height: 19.69px;
+    }
+}
